@@ -1,0 +1,15 @@
+ onPressed: () async {
+                  try {
+                    final newUser = await _auth.createUserWithEmailAndPassword(
+                        email: email, password: password);
+                    if (newUser != null) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => takes to the new widget,
+                        ),
+                      );
+                    }
+                  } catch (e) {
+                    print(e);
+                  }
